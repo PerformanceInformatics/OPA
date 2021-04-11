@@ -1,0 +1,236 @@
+@prefix : <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/OPA#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/OPA> .
+
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/OPA> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/OPA#requiresAnalysis
+:requiresAnalysis rdf:type owl:ObjectProperty ;
+                  rdfs:domain <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective> ;
+                  rdfs:range <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                             <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                             <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                             <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                  rdfs:comment "A relationship between an objective and an analysis that defines the type of analysis required to assess the state of the objective." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#has
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#has> rdf:type owl:ObjectProperty ;
+                                                                                           rdfs:domain <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Evaluation> ,
+                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective> ,
+                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                           rdfs:range <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                                                                                                      <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                                                                                                      <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                                                                                                      <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Evaluation> ,
+                                                                                                      <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective> ,
+                                                                                                      <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                           rdfs:comment "An  relationship between two objects in which the subject can be said to be closely associated with, contain, or can be said to be comprised of another entity." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#references
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#references> rdf:type owl:ObjectProperty ;
+                                                                                                  rdfs:domain <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                                  rdfs:comment "A relationship between an analysis object and the objects that it makes reference to in order to perform an analytical process." .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#assumption
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#assumption> rdf:type owl:DatatypeProperty ;
+                                                                                                  rdfs:domain <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective> ,
+                                                                                                              <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                                  rdfs:range xsd:string ;
+                                                                                                  rdfs:comment "Any thing that is assumed to be true from the outset of an analysis. Such as baselines or constants." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#inpustSpecification
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#inpustSpecification> rdf:type owl:DatatypeProperty ;
+                                                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#input> ;
+                                                                                                           rdfs:domain <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                                           rdfs:range xsd:anyURI ;
+                                                                                                           owl:propertyDisjointWith <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#output> ;
+                                                                                                           rdfs:comment "The property that provides the link to a given analysis specification." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#input
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#input> rdf:type owl:DatatypeProperty ;
+                                                                                             owl:propertyDisjointWith <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#output> ,
+                                                                                                                      <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#outputSpecification> .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#output
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#output> rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#outputSpecification
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#outputSpecification> rdf:type owl:DatatypeProperty ;
+                                                                                                           rdfs:subPropertyOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#output> ;
+                                                                                                           rdfs:domain <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ,
+                                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> ,
+                                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ,
+                                                                                                                       <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                                           rdfs:range xsd:anyURI ;
+                                                                                                           rdfs:comment "The property that provides the link to a given analysis specification that describes the format and interpretataion of an output." .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#AMV
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#AMV> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                           owl:disjointWith <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PMV> ;
+                                                                                           rdfs:comment "The class that describes spatial comfort analysis of type AMV." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> rdf:type owl:Class ;
+                                                                                                rdfs:comment "The class that describes a daylight analysis." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#DaylightExposure
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#DaylightExposure> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ;
+                                                                                                        rdfs:comment "The class that describes exposure calculation." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#DaylightSpatialAutonomy
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#DaylightSpatialAutonomy> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ;
+                                                                                                               rdfs:comment "The class that describes spatial daylight autonomy calculation." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy> rdf:type owl:Class ;
+                                                                                              rdfs:comment "The class that describes an energy analysis." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> rdf:type owl:Class ;
+                                                                                                   rdfs:comment "The class that describes an inspection process (survey, energy audit etc.)" .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Evaluation
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Evaluation> rdf:type owl:Class ;
+                                                                                                  rdfs:comment "The class that describes the eveluation of a specific analysis under a specific set of assumptiosn and inputs (i.e. color data, numerical etc.)." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#GlareProbability
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#GlareProbability> rdf:type owl:Class ;
+                                                                                                        rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ;
+                                                                                                        rdfs:comment "The class that describes glare probability calculation." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PFTAirInfiltration
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PFTAirInfiltration> rdf:type owl:Class ;
+                                                                                                          rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ;
+                                                                                                          rdfs:comment "The class that describes a process of determining the infiltration rates of a space using the PTF technique." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PMV
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PMV> rdf:type owl:Class ;
+                                                                                           rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> ;
+                                                                                           rdfs:comment "The class that describes spatial comfort analysis of type PMV." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective> rdf:type owl:Class ;
+                                                                                                            rdfs:comment "The class that describes an objective of a set of one or many analyses." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PointInTimeIllumninance
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PointInTimeIllumninance> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight> ;
+                                                                                                               rdfs:comment "The class that describes point in time illuminance analysis." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort> rdf:type owl:Class ;
+                                                                                                      rdfs:comment "The class that describes spatial comfort analysis." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Survey
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Survey> rdf:type owl:Class ;
+                                                                                              rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ;
+                                                                                              rdfs:comment "The class that describes a process of surveying the roof and building footprint in order to perform an area calculation as part of the energy audit." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#ThermographicInspection
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#ThermographicInspection> rdf:type owl:Class ;
+                                                                                                               rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ;
+                                                                                                               rdfs:comment "The class that describes a process of building envelope inspection using infrared thermography methods, using a thermal camera." .
+
+
+###  http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#blowerDoorTest
+<http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#blowerDoorTest> rdf:type owl:Class ;
+                                                                                                      rdfs:subClassOf <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit> ;
+                                                                                                      rdfs:comment "The class that describes a process of blower door tests to help determine a space's airtightness." .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Daylight>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Energy>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#EnergyAudit>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Evaluation>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PerformanceObjective>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#SpatialComfort>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#DaylightExposure>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#DaylightSpatialAutonomy>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#GlareProbability>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PointInTimeIllumninance>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#PFTAirInfiltration>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#Survey>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#ThermographicInspection>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#blowerDoorTest>
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointProperties ;
+  owl:members ( :requiresAnalysis
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#has>
+                <http://www.semanticweb.org/eleannapanagoulia/ontologies/2020/11/untitled-ontology-14#references>
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
